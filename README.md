@@ -10,23 +10,23 @@
 
 ## Features
 
-1. Approval workflow
-2. SMS messaage -> link to log time
-3. Admin dashbaord -> use administrate
-4. Email summary -> admin users
-5. Documentation for no overtime
+- Approval workflow
+- SMS messaage -> link to log time
+- Admin dashbaord -> use administrate
+- Email summary -> admin users
+- Documentation for no overtime
 
 
 ## UI
 
-Boostrap
+- Boostrap
 
 ## Libraries
 
-Devise
-Administrate
-Bootstrap
-Twilio
-Dotenv
-Rspec
-Capybara
+- Devise
+- Administrate
+- Bootstrap
+- Twilio
+- Dotenv
+- Rspec
+- Capybara

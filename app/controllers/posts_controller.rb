@@ -28,8 +28,11 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update(post_params)
-    redirect_to @post, notice: 'Your post was created successfully'
+    if @post.update(post_params)
+      redirect_to @post, notice: 'Your post was created successfully'
+    else
+      render :edit
+    end   
   end
 
   private

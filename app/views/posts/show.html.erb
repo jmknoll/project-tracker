@@ -1,1 +1,11 @@
 <%= @post.inspect %>
+
+<div>==============</div>
+<div>and here's an n+1</div>
+<% @user.posts.each do |post| %>
+  <p><%= post.id %></p>
+  <p>Comments</p>
+  <% post.comments.each do |comment| %>
+    <%= comment.content %>
+  <% end %>
+<% end %>

@@ -7,6 +7,8 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+
+    
   end
 
   def create
@@ -21,6 +23,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @post = Post.first
+    @user = User.first
   end
 
   def edit

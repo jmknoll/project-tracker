@@ -7,3 +7,14 @@ puts "1 user created"
 end
 
 puts "100 posts have been created"
+
+@post = Post.create(date: Date.today, rationale: "A post with comments", user_id: @user.id)
+
+puts "another post has been created" 
+
+10.times do | comment |
+  Comment.create!(date: Date.today, content: "#{comment} text content", post_id: @post.id)
+end
+
+puts "10 comments have been added to last post"
+
